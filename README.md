@@ -39,7 +39,9 @@ O principal diferencial da apresentação é abordar a **Bioinformática** como 
 
 ---
 
+---
+
 ## 🌐 Como Acessar
 
 Você pode visualizar a apresentação online através do GitHub Pages:
-👉 [Clique aqui para acessar o site]([https://seu-usuario.github.io/nome-do-repositorio/](https://ticialeh.github.io/estatistica-discovery-cesar/))
+👉 [Clique aqui para acessar o site](https://ticialeh.github.io/estatistica-discovery-cesar/)
