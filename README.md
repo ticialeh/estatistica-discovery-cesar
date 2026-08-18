@@ -13,21 +13,17 @@ A apresentação foi estruturada com o auxílio de **LLMs (Large Language Models
 
 ---
 
-## 👩‍💻 Autora
+👥 Autorias & Equipe
 
-**Letícia Gomes da Silva**
-* 🎓 **Análise e Desenvolvimento de Sistemas (ADS):** 3º Período • CESAR School (*Embarque Digital*)
-* 🔬 **Biomedicina:** 6º Período • Universidade Federal de Pernambuco (*UFPE*)
+* **Letícia Gomes da Silva**
+  * 🎓 ADS (3º Período) • CESAR School (Embarque Digital)
+  * 🔬 Biomedicina (6º Período) • UFPE
+  * 🧬 Foco: Bioinformática & Ciência de Dados Aplicada
 
----
-
-## 🧬 Conexão Interdisciplinar: Bioinformática
-
-O principal diferencial da apresentação é abordar a **Bioinformática** como a área de convergência entre os dois cursos:
-
-* **Sistemas & Programação (ADS):** Desenvolvimento de algoritmos para processamento e análise de grandes volumes de dados.
-* **Ciências Biológicas (Biomedicina):** Compreensão do contexto genômico, epidemiológico e molecular.
-* **Estatística:** A linguagem central que valida padrões, modelos preditivos e sequenciamentos genéticos.
+* **Lauan Gonçalves dos Santos**
+  * 🎓 ADS • CESAR School (Embarque Digital)
+  * 🎨 Design (4º Período) • UFPE
+  * 🖌️ Foco: UI/UX Design, Identidade Visual & Experiência do Usuário
 
 ---
 
