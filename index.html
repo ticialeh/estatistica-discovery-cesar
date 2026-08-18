@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discovery: Estatística e LLMs - Letícia Gomes da Silva</title>
+  <title>Discovery: Estatística e LLMs - Letícia Gomes & Lauan Gonçalves</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
       background-attachment: fixed;
       color: var(--text-main);
       line-height: 1.6;
-      padding: 40px 20px;
+      padding: 50px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -48,8 +48,8 @@
     .header-card {
       background-color: var(--card-bg);
       border-radius: 16px;
-      padding: 36px;
-      margin-bottom: 24px;
+      padding: 40px;
+      margin-bottom: 28px;
       box-shadow: var(--shadow);
       border: 1px solid var(--border-color);
     }
@@ -80,29 +80,47 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       color: var(--text-main);
-      margin-bottom: 4px;
+      margin-bottom: 20px;
+    }
+
+    /* Layout da Equipe: Um em cima do outro */
+    .team-vertical {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 12px;
+    }
+
+    .author-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
     }
 
     .student-name {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: var(--accent-orange);
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .courses-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 12px;
-      margin-top: 16px;
+      margin-bottom: 12px;
     }
 
     .course-card {
-      background: #f8fafc;
+      background: #ffffff;
       padding: 12px 16px;
-      border-radius: 10px;
-      border-left: 3px solid var(--accent-blue);
-      font-size: 0.9rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-blue);
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.875rem;
     }
 
     .course-card.ufpe {
@@ -119,12 +137,20 @@
       font-size: 0.825rem;
     }
 
+    .focus-tag {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      display: inline-block;
+      margin-top: 4px;
+    }
+
     /* Slides Content */
     .slide {
       background: var(--card-bg);
       border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 20px;
+      padding: 36px;
+      margin-bottom: 28px;
       box-shadow: var(--shadow);
       border: 1px solid var(--border-color);
     }
@@ -135,21 +161,21 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--accent-orange);
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     h2 {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       font-weight: 600;
       color: var(--text-main);
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       letter-spacing: -0.01em;
     }
 
     p {
       color: var(--text-muted);
       font-size: 0.975rem;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     ul {
@@ -158,8 +184,8 @@
 
     li {
       position: relative;
-      padding-left: 20px;
-      margin-bottom: 12px;
+      padding-left: 22px;
+      margin-bottom: 14px;
       color: var(--text-muted);
       font-size: 0.95rem;
     }
@@ -178,23 +204,55 @@
       color: var(--text-main);
       font-weight: 600;
       background: rgba(234, 88, 12, 0.1);
-      padding: 0 4px;
+      padding: 2px 6px;
       border-radius: 4px;
     }
 
-    /* Bioinfo Callout */
+    /* Estilo para espalhar os exemplos em divs separadas */
+    .example-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .example-box.design {
+      border-left-color: var(--accent-orange);
+    }
+
+    .example-box.integrated {
+      border-left-color: var(--accent-teal);
+    }
+
+    .example-box h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .example-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Bioinfo / Callout Box */
     .bioinfo-box {
       background: #f0fdf4;
       border: 1px solid #bbf7d0;
-      padding: 16px;
-      border-radius: 10px;
-      margin-top: 16px;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 24px;
     }
 
     .bioinfo-box h3 {
       font-size: 0.95rem;
       color: #166534;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -220,17 +278,40 @@
 
       <div class="student-info">
         <h1>#ATIVIDADE (DISCOVERY) - ESTATÍSTICA</h1>
-        <div class="student-name">Letícia Gomes da Silva</div>
       </div>
 
-      <div class="courses-grid">
-        <div class="course-card">
-          <div class="course-title">Análise e Des. de Sistemas (ADS)</div>
-          <div class="course-detail">Embarque Digital • CESAR School • 3º Período</div>
+      <!-- Equipe disposta em lista vertical (um em cima do outro) -->
+      <div class="team-vertical">
+        <!-- Autora 1: Letícia -->
+        <div class="author-box">
+          <div class="student-name">Letícia Gomes da Silva</div>
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-title">Análise e Des. de Sistemas (ADS)</div>
+              <div class="course-detail">Embarque Digital • CESAR School • 3º Período</div>
+            </div>
+            <div class="course-card ufpe">
+              <div class="course-title">Biomedicina</div>
+              <div class="course-detail">Universidade Federal de Pernambuco (UFPE) • 6º Período</div>
+            </div>
+          </div>
+          <div class="focus-tag">🧬 Foco: Bioinformática & Ciência de Dados Aplicada</div>
         </div>
-        <div class="course-card ufpe">
-          <div class="course-title">Biomedicina</div>
-          <div class="course-detail">Universidade Federal de Pernambuco (UFPE) • 6º Período</div>
+
+        <!-- Autor 2: Lauan -->
+        <div class="author-box">
+          <div class="student-name">Lauan Gonçalves dos Santos</div>
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-title">Análise e Des. de Sistemas (ADS)</div>
+              <div class="course-detail">Embarque Digital • CESAR School</div>
+            </div>
+            <div class="course-card ufpe">
+              <div class="course-title">Design</div>
+              <div class="course-detail">Universidade Federal de Pernambuco (UFPE) • 4º Período</div>
+            </div>
+          </div>
+          <div class="focus-tag">🎨 Foco: UI/UX Design & Visualização de Dados</div>
         </div>
       </div>
     </div>
@@ -248,9 +329,10 @@
       <div class="slide-number">Tópico 02</div>
       <h2>Como surgiu (Contexto histórico)?</h2>
       <ul>
-        <li><span class="highlight">Antiguidade:</span> Surgiu da necessidade do Estado (Egito, Roma, China) de realizar censos para cobrança de impostos e controle militar. A palavra deriva do latim <em>status</em> (Estado).</li>
-        <li><span class="highlight">Século XVII:</span> Ganhou base matemática sólida com o estudo das probabilidades em jogos de azar por Pascal e Fermat.</li>
-        <li><span class="highlight">Era Moderna:</span> Tornou-se o pilar do método científico, da epidemiologia moderna e da inteligência artificial/Machine Learning.</li>
+        <li><span class="highlight">Antiguidade:</span> Surgiu da necessidade do Estado (Egito, Roma, China) de realizar censos para cobrança de impostos, controle demográfico e recursos militares. A palavra deriva do latim <em>status</em> (Estado).</li>
+        <li><span class="highlight">Século XVII (Probabilidade):</span> Ganhou base matemática sólida com o estudo das probabilidades aplicadas a jogos de azar por Blaise Pascal e Pierre de Fermat, abrindo caminho para estimativas de risco.</li>
+        <li><span class="highlight">Século XIX (Avanço Científico e Saúde):</span> John Snow usou mapeamento estatístico para conter a cólera em Londres (origem da epidemiologia), enquanto Florence Nightingale revoluciona a saúde hospitalar com visualização gráfica de dados estatísticos. Na matemática, Gauss desenvolveu a distribuição normal.</li>
+        <li><span class="highlight">Era Moderna & Digital:</span> Tornou-se o pilar fundamental do método científico, do aprendizado de máquina (Machine Learning) e da Ciência de Dados na era dos Big Data.</li>
       </ul>
     </div>
 
@@ -259,28 +341,41 @@
       <div class="slide-number">Tópico 03</div>
       <h2>Para que serve?</h2>
       <ul>
-        <li><strong>Mapeamento de Padrões:</strong> Descobrir tendências ocultas e anomalias em grandes volumes de dados.</li>
-        <li><strong>Redução de Achismos:</strong> Validação científica e tomada de decisão orientada a dados (Data-Driven).</li>
-        <li><strong>Modelagem Preditiva:</strong> Antecipar cenários futuros na saúde, no mercado e no desempenho de software.</li>
-        <li><strong>Testes de Confiabilidade:</strong> Garantir que um diagnóstico ou algoritmo seja preciso e estatisticamente significante.</li>
+        <li><strong>Mapeamento de Padrões:</strong> Descobrir tendências ocultas, comportamentos de usuários e anomalias em grandes volumes de dados.</li>
+        <li><strong>Redução de Achismos:</strong> Garantir a validação científica e a tomada de decisão orientada por evidências (Data-Driven Decision Making).</li>
+        <li><strong>Modelagem Preditiva:</strong> Antecipar cenários futuros na saúde, tendências de consumo no mercado e métricas de desempenho em softwares.</li>
+        <li><strong>Testes de Confiabilidade e Validação:</strong> Avaliar significância estatística, margens de erro e taxa de eficácia de novos fármacos, algoritmos ou interfaces.</li>
+        <li><strong>Otimização de Processos:</strong> Avaliar gargalos operacionais e refinar a eficiência de sistemas tecnológicos e fluxos de trabalho.</li>
       </ul>
     </div>
 
     <!-- Tópico 4 -->
     <div class="slide">
       <div class="slide-number">Tópico 04</div>
-      <h2>Aplicação: ADS + Biomedicina + Bioinformática</h2>
-      <p>A <strong>Bioinformática</strong> representa a convergência ideal entre o desenvolvimento de software e as ciências biológicas, tendo a <strong>Estatística</strong> como linguagem central:</p>
+      <h2>Aplicações Práticas & Interdisciplinares</h2>
+      <p>A <strong>Estatística</strong> atua como a linguagem unificadora que conecta o desenvolvimento de software (ADS) com as áreas da saúde (Biomedicina) e da experiência visual (Design):</p>
       
-      <ul>
-        <li><strong>Sequenciamento Genômico (ADS + Bioinfo):</strong> Algoritmos estatísticos são usados no alinhamento de DNA/RNA para identificar mutações genéticas em bases gigantescas de dados.</li>
-        <li><strong>Análise Epidemiológica (Biomedicina + ADS):</strong> Modelagem de taxas de infecção e desenvolvimento de sistemas biomédicos de monitoramento em tempo real.</li>
-        <li><strong>Drug Discovery com Machine Learning:</strong> Uso de modelos probabilísticos e aprendizagem de máquina para simular a interação de fármacos com proteínas.</li>
-      </ul>
+      <!-- Div do Exemplo 1 -->
+      <div class="example-box">
+        <h3>🧬 Exemplo 01 — Bioinformática (ADS + Biomedicina)</h3>
+        <p>Uso de algoritmos estatísticos e probabilísticos no sequenciamento e alinhamento de DNA/RNA para identificar mutações genéticas e prever a eficácia de medicamentos (Drug Discovery).</p>
+      </div>
+
+      <!-- Div do Exemplo 2 -->
+      <div class="example-box design">
+        <h3>🎨 Exemplo 02 — Design da Informação & UX Research (ADS + Design)</h3>
+        <p>Aplicação de testes A/B, métricas quantitativas de usabilidade e análise estatística do comportamento de cliques (Heatmaps) para fundamentar decisões de interfaces visuais acessíveis e intuitivas.</p>
+      </div>
+
+      <!-- Div do Exemplo 3 -->
+      <div class="example-box integrated">
+        <h3>💡 Exemplo 03 — Interfaces Inteligentes em Saúde / MedTech (ADS + Biomedicina + Design)</h3>
+        <p>Criação de dashboards clínicos e sistemas biomédicos onde algoritmos estatísticos analisam os dados do paciente, enquanto o Design transforma métricas complexas em representações visuais claras para apoiar decisões médicas em tempo real.</p>
+      </div>
 
       <div class="bioinfo-box">
-        <h3>🧬 A Bioinformática na prática do meu perfil</h3>
-        <p>Unir a lógica de programação de ADS (3º período) ao conhecimento biológico da UFPE (6º período) permite criar e otimizar algoritmos que processam dados de saúde com rigor estatístico.</p>
+        <h3>💡 A Estatística na prática do nosso time</h3>
+        <p>Unir a programação de ADS ao conhecimento biológico e ao rigor estético/funcional do Design permite criar softwares robustos, cientificamente validados e focados em proporcionar uma excelente experiência ao usuário.</p>
       </div>
     </div>
 
